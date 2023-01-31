@@ -1,6 +1,7 @@
 package net.torpedo.firstmod;
 
 import net.fabricmc.api.ModInitializer;
+import net.torpedo.firstmod.item.ModItemGroup;
 import net.torpedo.firstmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,6 +12,7 @@ public class FirstMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
 		ModItems.addItemsToItemGroup();
 	}

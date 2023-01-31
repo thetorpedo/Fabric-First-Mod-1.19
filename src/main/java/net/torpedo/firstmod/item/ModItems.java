@@ -14,6 +14,8 @@ public class ModItems {
 
     public static final Item BALL_OF_YARN = registerItem("ball_of_yarn",
             new Item(new FabricItemSettings()));
+    public static final Item LASER_POINTER = registerItem("laser_pointer",
+            new Item(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(FirstMod.MOD_ID, name), item);
@@ -21,6 +23,12 @@ public class ModItems {
 
     public static void addItemsToItemGroup(){
         addToItemGroup(ItemGroups.FUNCTIONAL, BALL_OF_YARN);
+        addToItemGroup(ItemGroups.FUNCTIONAL, LASER_POINTER);
+
+        addToItemGroup(ItemGroups.MODITEMS, BALL_OF_YARN);
+        addToItemGroup(ItemGroups.FUNCTIONAL, LASER_POINTER);
+
+
     }
 
     public static void addToItemGroup(ItemGroup group, Item item){

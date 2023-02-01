@@ -36,5 +36,4 @@ public class ModBlocks {
     public static void registerModBlocks(){
         FirstMod.LOGGER.info("Registering mod blocks for "+FirstMod.MOD_ID);
     }
-
 }

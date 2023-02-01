@@ -25,8 +25,8 @@ public class ModItems {
         addToItemGroup(ItemGroups.FUNCTIONAL, BALL_OF_YARN);
         addToItemGroup(ItemGroups.FUNCTIONAL, LASER_POINTER);
 
-        addToItemGroup(ItemGroups.MODITEMS, BALL_OF_YARN);
-        addToItemGroup(ItemGroups.FUNCTIONAL, LASER_POINTER);
+        addToItemGroup(ModItemGroup.MOD_ITEMS, BALL_OF_YARN);
+        addToItemGroup(ModItemGroup.MOD_ITEMS, LASER_POINTER);
 
 
     }
